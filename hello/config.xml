@@ -17,17 +17,22 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <platform name="android">
-        <allow-intent href="market:*" />
+        <allow-intent href="market:*"/>
+         <splash src="res/screen/android/appicon.png" density="land-hdpi"/>
+    <splash src="res/screen/android/appicon.png" density="land-ldpi"/>
+    <splash src="res/screen/android/appicon3.png" density="land-mdpi"/>
+    <splash src="res/screen/android/appicon4.png" density="land-xhdpi"/>
+
+    <splash src="res/screen/android/appicon11.png" density="port-hdpi"/>
+    <splash src="res/screen/android/appicon11.png" density="port-ldpi"/>
+    <splash src="res/screen/android/appicon13.png" density="port-mdpi"/>
+    <splash src="res/screen/android/appicon14.png" density="port-xhdpi"/>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
     <plugin name="cordova-plugin-splashscreen" spec="^4.1.0"/>
-    <preference name = "SplashScreen" value = "screen"/>
+    <preference name = "AutoHideSplashScreen" value = "true"/>
     <preference name = "SplashScreenDelay" value = "5000"/>
-    <preference name = "SplashMaintainAspectRatio" value = "true"/>
-
-
-
 </widget>
